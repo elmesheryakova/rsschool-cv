@@ -1,6 +1,6 @@
-[<img src="img/photo.jpg" height="200" width="150" style="float:left; margin-right:10px" />](img/photo.jpg) 
+[<img src="img/photo.jpg" height="350" style="float:left; margin-right:10px" />](img/photo.jpg) 
 
-## Elena Mesheryakova
+**Elena Mesheryakova**
 ### Junior FE Dev
 ****
 #### Contact information:
