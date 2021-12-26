@@ -1,6 +1,6 @@
 [<img src="img/photo.jpg" height="350" style="float:left; margin-right:10px" />](img/photo.jpg) 
 
-**Elena Mesheryakova**
+## **Elena Mesheryakova**
 ### Junior FE Dev
 ****
 #### Contact information:
@@ -27,13 +27,13 @@ function multiply(a, b){return  a * b}
 ````
 
 ### Training:
-##### *books:*
-- ##### JavaScript Absolute Beginner's Guide (Kirupa Chinnathambi)
-- ##### Vue.js in Action (Erik Hanchett with Benjamin Listwon) 
-- ##### HTML and CSS: Design and Build Websites (Jon Duckett) 
-##### *courses:*
-- ##### HTML-academy
-- ##### mostly youtube 
+#####  *books/courses:*
+
++ ##### JavaScript Absolute Beginner's Guide (Kirupa Chinnathambi)
++ ##### Vue.js in Action (Erik Hanchett with Benjamin Listwon) 
++ ##### HTML and CSS: Design and Build Websites (Jon Duckett) 
++ ##### HTML-academy
++ ##### mostly youtube 
 
 
 ### My study projects:
