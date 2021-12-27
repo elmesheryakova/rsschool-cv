@@ -6,13 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="container">
+        <div class="main__wrapper" id="cv">
+            <div class="sidebar">
+                <div class="sidebar__img">
+                    <img src="./assets/img/photo.jpg" alt="photo">
+                </div>
+                <p class="sidebar__name">
+                    Elena <span>Mesheryakova</span>
+                </p>
+                <p class="sidebar__career">Junior Front-end Developer</p>
+                <div class="sidebar__block">
+                    <div class="sidebar__block-title">contact</div>
+                    <ul class="sidebar__block-list block-list">
+                        <li class="block-list__item"><img src="./assets/svg/bd.svg" alt="date bd">09 - 12 - 1990</li>
+                        <li class="block-list__item"><img src="./assets/svg/phone.svg" alt="phone"><a
+                                href="tel:+79112701027"> +7 911 270 10 27</a> </li>
+                        <li class="block-list__item"><img src="./assets/svg/email.svg" alt="email"><a
+                                href="mailto:mesheryakova-elena90@yandex.ru">mesheryakova-elena90@yandex.ru</a> </li>
+                        <li class="block-list__item"><img src="./assets/svg/discord.svg" alt="">Elena (@elmesheryakova)
+                        </li>
+                        <li class="block-list__item"><img src="./assets/svg/telegram.svg" alt="telegram"><a
+                                href="https://t.me/e_mesheryakova" target="_blank">@e_mesheryakova</a>
+                        </li>
+                        <li class="block-list__item"><img src="./assets/svg/local.svg" alt="local">St. Petersburg</li>
+                    </ul>
+                </div>
+                <div class="sidebar__block">
+                    <div class="sidebar__block-title">Skills</div>
+                    <ul class="sidebar__block-list block-list">
+                        <li class="block-list__item">VUE.js/ Nuxt.js</li>
+                        <li class="block-list__item">JS (DOM)</li>
+                        <li class="block-list__item">Git, GitHub</li>
+                        <li class="block-list__item">SCSS, Flex, Grid, BEM</li>
+                        <li class="block-list__item">Figma, PSD</li>
+                    </ul>
+                </div>
+                <div class="sidebar__block">
+                    <div class="sidebar__block-title">Personal Skills</div>
+                    <ul class="sidebar__block-list block-list">
+                        <li class="block-list__item">Persistence</li>
+                        <li class="block-list__item">Assiduity</li>
+                        <li class="block-list__item">Problem-solving</li>
+                        <li class="block-list__item">Responsibility</li>
+                        <li class="block-list__item">Discipline</li>
+                    </ul>
+                </div>
+                <button id="save" onclick="printPDF()">Download</button>
 
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
