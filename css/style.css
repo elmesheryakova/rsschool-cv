@@ -94,9 +94,27 @@ body {
 
 .title {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: #424242;
-  font-size: 16px;
-  line-height: 20px; }
+  margin-top: 30px;
+  padding: 0px 20px 18px;
+  display: inline-block;
+  position: relative; }
+  .title::before, .title::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #424242;
+    top: 9px; }
+  .title::after {
+    left: 0; }
+  .title::before {
+    right: 0; }
 
 .container {
   max-width: 980px;
@@ -105,14 +123,50 @@ body {
   padding: 0 10px;
   margin: 0 auto; }
 
+.header__wrapper {
+  background-color: #424242;
+  padding: 10px 20px; }
+
+.header .nav-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.header .nav-menu__item:hover {
+  color: #D8ECFF;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s; }
+
+.header .nav-menu__item + .nav-menu__item {
+  padding-left: 30px; }
+
+.header .nav-menu__btn {
+  background: none;
+  color: #D8ECFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; }
+  .header .nav-menu__btn::before {
+    margin-right: 5px; }
+
 .main__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 300px auto;
   grid-template-columns: 300px auto;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
-  border-top: 4px solid #0074FD;
+  padding-right: 30px;
   height: 100%; }
 
 .sidebar {
@@ -185,7 +239,86 @@ body {
   -ms-flex-align: end;
   align-items: flex-end;
   color: #424242; }
-  .block-list__item img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px; }
+  .block-list__item::before {
+    width: 25px;
+    font-size: 16px; }
+
+.content {
+  border-top: 1px solid rgba(66, 66, 66, 0.2);
+  border-bottom: 1px solid rgba(66, 66, 66, 0.2); }
+  .content__block {
+    font-size: 13px;
+    line-height: 22px;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.2);
+    padding-bottom: 20px; }
+    .content__block:last-child {
+      border-bottom: none; }
+    .content__block-paragraph {
+      padding-bottom: 10px; }
+      .content__block-paragraph:last-child {
+        font-weight: 600; }
+    .content__block-item {
+      padding-bottom: 5px;
+      color: #424242; }
+      .content__block-item span {
+        color: #7E7E7E;
+        position: relative;
+        padding-left: 10px;
+        margin-left: 10px; }
+        .content__block-item span::before {
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: 0;
+          height: 16px;
+          width: 1px;
+          background-color: #7E7E7E; }
+    .content__block-code {
+      letter-spacing: 1px;
+      font-style: italic;
+      color: #424242; }
+
+.project {
+  margin-bottom: 15px; }
+  .project__title {
+    font-weight: 700; }
+  .project__link {
+    color: #0074FD !important;
+    text-decoration: underline; }
+
+.footer__wrapper {
+  background-color: #424242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px; }
+
+.footer__info {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .footer__info-copy {
+    padding-right: 20px;
+    color: #000; }
+  .footer__info-git:hover {
+    color: #D8ECFF;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s; }
+
+.footer__logo {
+  height: 20px;
+  width: 60px; }
+  .footer__logo img {
+    width: 100%;
+    height: 100%; }
