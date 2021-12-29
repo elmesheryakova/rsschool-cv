@@ -53,6 +53,10 @@ body {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
     &__wrapper {
         background-color: #424242;
         padding: 10px 20px;
@@ -95,6 +99,10 @@ body {
     }
 }
 
+.menu-burger {
+    display: none;
+}
+
 .main__wrapper {
     display: grid;
     grid-template-columns: 300px auto;
@@ -102,6 +110,7 @@ body {
     padding: 20px;
     padding-right: 30px;
     height: 100%;
+    padding-top: 55px;
 }
 
 .sidebar {
@@ -302,3 +311,5 @@ body {
         }
     }
 }
+
+@import 'media.scss';
