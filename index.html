@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/iconfonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <nav class="nav-menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#about">about me</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#courses">courses and books</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu__link" href="#projects">projects</a></li>
+                        <li class="nav-menu__item "> <button id="save" class="nav-menu__btn _icon-save"
+                                onclick="printPDF()">Save
+                                PDF</button>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="main__wrapper" id="cv">
+                <div class="sidebar">
+                    <div class="sidebar__img" data-da="content,first,700">
+                        <img src="./assets/img/photo.jpg" alt="photo">
+                    </div>
+                    <h1 class="sidebar__name">
+                        Elena <span>Mesheryakova</span>
+                    </h1>
+                    <h2 class="sidebar__career">Junior Front-end Developer</h2>
+                    <div class="sidebar__block open">
+                        <h4 class="sidebar__block-title">contact</h4>
+                        <ul class="sidebar__block-list block-list">
+                            <li class="block-list__item _icon-bd">09 - 12 - 1990
+                            </li>
+                            <li class="block-list__item _icon-phone"><a href="tel:+79112701027"> +7 911 270 10 27</a>
+                            </li>
+                            <li class="block-list__item _icon-email"><a
+                                    href="mailto:mesheryakova-elena90@yandex.ru">mesheryakova-elena90@yandex.ru</a>
+                            </li>
+                            <li class="block-list__item _icon-discord">Elena
+                                (@elmesheryakova)
+                            </li>
+                            <li class="block-list__item _icon-telegram"><a href="https://t.me/e_mesheryakova"
+                                    target="_blank">@e_mesheryakova</a>
+                            </li>
+                            <li class="block-list__item _icon-local">St. Petersburg, Russia
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__block close">
+                        <h4 class="sidebar__block-title">Skills</h4>
+                        <ul class="sidebar__block-list block-list">
+                            <li class="block-list__item">VUE.js/ Nuxt.js</li>
+                            <li class="block-list__item">JS (DOM)</li>
+                            <li class="block-list__item">Git, GitHub</li>
+                            <li class="block-list__item">SCSS, Flex, Grid, BEM</li>
+                            <li class="block-list__item">Figma, PSD</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__block close">
+                        <h4 class="sidebar__block-title">Personal Skills</h4>
+                        <ul class="sidebar__block-list block-list">
+                            <li class="block-list__item">Persistence</li>
+                            <li class="block-list__item">Assiduity</li>
+                            <li class="block-list__item">Problem-solving</li>
+                            <li class="block-list__item">Responsibility</li>
+                            <li class="block-list__item">Discipline</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="content">
+                    <div class="content__block section" id="about">
+                        <h4 class="content__block-title title">About me</h4>
+                        <div class="content__block-text">
+                            <p class="content__block-paragraph">My career in IT started in 2020. At first I took simple
+                                orders on the freelance exchange.
+                                Now I work as a junior front-end developer in a small company in St. Petersburg. I
+                                have little experience, but I am constantly learning new information and practice a lot.
+                            </p>
+                            <p class="content__block-paragraph">My goal - is to work in an international company with
+                                the subsequent opportunity to get a
+                                job offer abroad.</p>
+                        </div>
+                    </div>
+                    <div class="content__block section" id="courses">
+                        <h4 class="content__block-title title">Courses and books</h4>
+
+                        <ul class="content__block-list">
+                            <li class="content__block-item"> JavaScript Absolute Beginner's Guide <span>Kirupa
+                                    Chinnathambi</span> </li>
+                            <li class="content__block-item">Vue.js in Action <span>Erik Hanchett with Benjamin
+                                    Listwon</span>
+                            </li>
+
+                            <li class="content__block-item"> HTML and CSS: Design and Build Websites <span>Jon
+                                    Duckett</span></li>
+                            <li class="content__block-item"> HTML-academy <span>course</span> </li>
+                            <li class="content__block-item"> mostly YouTube </li>
+                        </ul>
+                    </div>
+                    <div class="content__block ">
+                        <h4 class="content__block-title title">Code example</h4>
+
+                        <p class="content__block-code">function multiply(a, b){return a * b}</p>
+
+                    </div>
+                    <div class="content__block section" id="projects">
+                        <h4 class="content__block-title title">Projects</h4>
+                        <div class="project">
+                            <h6 class="project__title">Artel</h6>
+                            <div class="project__date">2020 | Freelance</div>
+                            <p class="project__description">The project has animation and color theme switching</p>
+                            <a href="https://elena-mesheryakova.github.io/artel/" class="project__link">Artel</a>
+                        </div>
+                        <div class="project">
+                            <h6 class="project__title">Educational projects</h6>
+                            <div class="project__date">2020 | Practice</div>
+                            <p class="project__description">Link to a repository with educational projects</p>
+                            <a href="https://elena-mesheryakova.github.io" class="project__link">GitHub Repository</a>
+                        </div>
+                    </div>
+                    <div class="content__block">
+                        <h4 class="content__block-title title">Language</h4>
+
+                        <p class="content__block-lang">English level - reading the documentation. I'm starting to learn
+                            a language with a teacher.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <p class="footer__info-copy _icon-copy"> 2022</p>
+                    <a href="https://elmesheryakova.github.io/" target="_blank"
+                        class="footer__info-git">elmesheryakova</a>
+                </div>
+
+
+                <div class="footer__logo">
+                    <a href="https://rs.school/js/" target="_blank"> <img src="./assets/svg/rs_school_js.svg"
+                            alt="rsschool"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
